@@ -21,7 +21,7 @@ Patch0:     OpenRGB.patch
 
 Provides:   %{dkms_name}-dkms = %{version}
 Requires:   dkms
-Requires:	openrgb
+Requires:   openrgb
 
 %description
 DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB. The i2c-piix4 driver supports the secondary i2c controller on several >= X370 AM4 mainboards.
