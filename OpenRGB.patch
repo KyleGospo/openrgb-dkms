@@ -1,5 +1,5 @@
---- a/drivers/i2c/busses/i2c-piix4.c
-+++ b/drivers/i2c/busses/i2c-piix4.c
+--- i2c-piix4.c
++++ i2c-piix4.c
 @@ -467,11 +467,11 @@ static int piix4_transaction(struct i2c_adapter *piix4_adapter)
  	if (srvrworks_csb5_delay) /* Extra delay for SERVERWORKS_CSB5 */
  		usleep_range(2000, 2100);
