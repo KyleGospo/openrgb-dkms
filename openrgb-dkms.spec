@@ -8,6 +8,7 @@ Release:    1%{?dist}
 Summary:    DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB
 License:    GPLv2+
 URL:        https://github.com/KyleGospo/openrgb-dkms
+BuildArch:  noarch
 
 # Source file:
 # https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/drivers/i2c/busses/i2c-piix4.c
