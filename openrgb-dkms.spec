@@ -6,7 +6,7 @@ Name:       %{dkms_name}-dkms
 Version:    %{kernel_version}.{{{ git_dir_version }}}
 Release:    1%{?dist}
 Summary:    DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB
-License:    GPLv2+
+License:    GPLv2
 URL:        https://github.com/KyleGospo/openrgb-dkms
 BuildArch:  noarch
 
