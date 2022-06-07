@@ -16,6 +16,8 @@ Source0:    https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/p
 Source1:    i2c-nct6775.c
 Source2:    Makefile
 Source3:    dkms.conf
+Source4:    LICENSE
+Source5:    README.md
 
 # OpenRGB i2c-piix4 patch:
 Patch0:     OpenRGB.patch
@@ -29,7 +31,7 @@ DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB. 
 
 %prep
 %setup -q -T -c -n %{name}-%{version}
-cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} .
+cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} .
 %patch0 -p0
 
 %build
@@ -57,6 +59,8 @@ dkms install -m %{dkms_name} -v %{version} -q --force || :
 dkms remove -m %{dkms_name} -v %{version} -q --all || :
 
 %files
+%license LICENSE
+%doc README.md
 %{_usrsrc}/%{dkms_name}-%{version}
 %{_sysconfdir}/modules-load.d/i2c-openrgb.conf
 
