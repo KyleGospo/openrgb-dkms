@@ -1,4 +1,6 @@
-obj-m += i2c-piix4.o i2c-nct6775.o
+obj-m += i2c-piix4.o
+obj-m += i2c-nct6775.o
+
 ccflags-y := -std=gnu99 -Wno-declaration-after-statement
 KERNEL_SOURCE_DIR := /lib/modules/$(shell uname -r)/build
 
