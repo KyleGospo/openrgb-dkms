@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 %global dkms_name openrgb
-%global kernel_version 6.3
+%global kernel_version 6.12
 
 Name:       %{dkms_name}-dkms
 Version:    %{kernel_version}.{{{ git_dir_version }}}
@@ -32,7 +32,7 @@ DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB. 
 %prep
 %setup -q -T -c -n %{name}-%{version}
 cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} .
-%patch0 -p0
+%patch 0 -p0
 
 %build
 
