@@ -32,7 +32,7 @@ DKMS kernel module with i2c-nct6775 and patched i2c-piix4 for use with OpenRGB. 
 %prep
 %setup -q -T -c -n %{name}-%{version}
 cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} .
-%patch0 -p0
+%patch 0 -p0
 
 %build
 
