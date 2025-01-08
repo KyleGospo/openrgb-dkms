@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 %global dkms_name openrgb
-%global kernel_version 6.3
+%global kernel_version 6.12
 
 Name:       %{dkms_name}-dkms
 Version:    %{kernel_version}.{{{ git_dir_version }}}
